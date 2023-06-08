@@ -1,0 +1,15 @@
+export const EDGE_IP_HOTSPOT = "10.42.0.1";
+export const EDGE_IP_WIFI = "192.168.2.178";
+// export const EDGE_IP_WIFI = "192.168.2.156";
+// export const HOME_DIR="/home/luxslam2";
+export const HOME_DIR="/Users/alinematich/Downloads";
+export const DL_DIR=`${HOME_DIR}/Ivero_files`;
+export const EDGE_WEB_PORT = "8084";
+export const EDGE_ROS_PORT = "9090";
+export const EDGE_TMUX_PORT = "8086";
+export const MY_IP_WIFI = "localhost";
+export const MY_SERVER_PORT = "8766";
+export const EDGE_HOTSPOT_USERNAME = "khadas";
+export const EDGE_HOTSPOT_PASSWORD = "khadas12";
+export const EDGE_DOWNLOAD_PORT = "8765";
+export const GET_FILE_LIST_TIMEOUT = 5000; //ms

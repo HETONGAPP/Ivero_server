@@ -1,0 +1,45 @@
+----- Ivero changed files:
+
+/opt/ros/foxy/lib/rosbridge_server/rosbridge_websocket.py
+
+/home/khadas/server/run.sh
+
+/home/khadas/workspace/src/webrtc_ros/web/viewer.html
+
+/opt/ros/foxy/share/rosbridge_server/launch/rosbridge_websocket_launch.xml
+
+/etc/systemd/system/my-script.service
+
+----- build after a change
+
+Colcon build
+
+Source install/local_setup.bash
+
+---- working on:
+
+nmcli -g NAME connection show --active
+nmcli -t -f device connection show --active
+nmcli -t -f device connection show --active | grep wifi | cut -d':' -f1
+
+startup:
+    ./run hotspot
+    nmcli device wifi hotspot ifname wlan0 con-name Hotspot ssid khadas password khadas12
+    toggle vpn to make hotspot work
+
+make static and unique:
+    edge_ip_over_hotspot
+    edge_ip_over_wifi
+    edge_hotspot_name
+
+free space
+download a record
+
+
+
+
+- error uncaughtException: Error: connect ECONNREFUSED 192.168.2.178:8765
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  digest: undefined
+}
